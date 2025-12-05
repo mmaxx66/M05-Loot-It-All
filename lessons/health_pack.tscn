@@ -7,12 +7,11 @@
 radius = 27.02
 
 [node name="HealthPack" type="Area2D" groups=["healing_item"]]
+collision_layer = 2
 script = ExtResource("1_ht84s")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(907, 567)
 texture = ExtResource("2_fh62r")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(907, 567)
 shape = SubResource("CircleShape2D_nak5q")
